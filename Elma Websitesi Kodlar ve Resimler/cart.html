@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Elma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&dispaly=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  </head>
+  <body class="header">
+
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="Elma%20Logo.png"></img>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="products.html">Ürünler</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">İletisim</a></li>
+            <li><a href="account.html">Hesap</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px" alt=""></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()"></img>
+      </div>
+
+    </div>
+
+
+<!-----cart items details----->
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <th>Ürün</th>
+      <th>Adet</th>
+      <th>Fiyat</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="buy-1.jpg">
+            <div>
+              <p>Kırımızı Baskılı T-Shirt</p>
+            <small>Fiyat : 350TL</small>
+            <br>
+          <a href="">Kaldır</a>
+        </div>
+        </div>
+      </td>
+      <td>Adet: <input type="number" value="1"></input></td>
+      <td>Fiyat : 350TL</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="buy-2.jpg">
+            <div>
+              <p>Siyah Ayakkabı</p>
+            <small>Fiyat : 300TL</small>
+            <br>
+          <a href="">Kaldır</a>
+        </div>
+        </div>
+      </td>
+      <td>Adet: <input type="number" value="1"></input></td>
+      <td>Fiyat : 300TL</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="buy-3.jpg">
+            <div>
+              <p>Gri Eşofman</p>
+            <small>Fiyat : 400TL</small>
+            <br>
+          <a href="">Kaldır</a>
+        </div>
+        </div>
+      </td>
+      <td>Adet: <input type="number" value="1"></input></td>
+      <td>Fiyat : 400TL</td>
+    </tr>
+  </table>
+
+<div class="total-price">
+  <table>
+    <tr>
+      <td>Ara Toplam</td>
+      <td>1050TL</td>
+    </tr>
+    <tr>
+      <td>K.D.V</td>
+      <td>189TL</td>
+    </tr>
+    <tr>
+      <td>Toplam</td>
+      <td>1239TL</td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+
+
+<!-------footer------->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Uygulamayı İndirin</h3>
+        <p>Android ve IOS için Uygulamamızı İndirin.</p>
+        <div class="app-logo">
+          <img src="play-store.png"></img>
+          <img src="app-store.png"></img>
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="Elma%20Logo.png"></img>
+        <h3>Kutluhan Kurt Tarafından Geliştirildi.</h3>
+      </div>
+      <div class="footer-col-3">
+        <h3>Yardımcı Bağlantılar</h3>
+        <ul>
+         <li>Kuponlar</li>
+          <li>Blog Yazısı</li>
+          <li>İade politikasi</li>
+          <li>Geri Ödeme</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Sosyal Ağlar</h3>
+        <ul>
+         <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+     <p class="copyright">Telif Hakkı 2020 - Kutluhan Kurt ve Elma A.Ş.</p>
+  </div>
+</div>
+  <!-------js for toggle menu------->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight ="0px";
+  function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+
+  </body>
+</html>
